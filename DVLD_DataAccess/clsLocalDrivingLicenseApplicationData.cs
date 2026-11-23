@@ -288,11 +288,12 @@ namespace DVLD_DataAccess
 
         }
 
+        // هل الطلب رقم 10 *نجح* في اختبار 1 النظر مثلا
         public static bool DoesPassTestType( int LocalDrivingLicenseApplicationID, int TestTypeID)
 
         {
            
-             
+            
             bool Result = false;
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
@@ -338,6 +339,7 @@ namespace DVLD_DataAccess
 
         }
 
+        // هل الطلب رقم كذك *قدم* اختبار نظر مثلا 
         public static bool DoesAttendTestType(int LocalDrivingLicenseApplicationID, int TestTypeID)
 
         {
